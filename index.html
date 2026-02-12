@@ -91,35 +91,51 @@ body{
 
 <div class="container">
 
-<a class="btn" href="https://fews.ideam.gov.co/visorfews/nacional/estacion" target="_blank">
+<a class="btn" href="https://fews.ideam.gov.co/visorfews/nacional/estacion" target="_blank"
+onclick="track('FEW IDEAM')">
 Few IDEAM
 </a>
 
-<a class="btn" href="https://urra.com.co/informe-de-hidrologia/" target="_blank">
+<a class="btn" href="https://urra.com.co/informe-de-hidrologia/" target="_blank"
+onclick="track('Informes URRA')">
 Informes URRA
 </a>
 
-<a class="btn" href="https://forms.office.com/pages/responsepage.aspx?id=roHeBMlfhkmI5KG63q4bb5hEXsLH8TdKnlWAvZJ7-EtUNEEwR1YwNEk4SFVZWDJTS1ZKTE5ERk80WC4u&utm_source=brevo&utm_campaign=Formulario+-+Diagnostico+Atencion+Prioritaria+para+miembros+de+la+comunidad+unisinua&utm_medium=email&route=shorturl target="_blank">
+<a class="btn" href="https://forms.office.com/pages/responsepage.aspx?id=roHeBMlfhkmI5KG63q4bb5hEXsLH8TdKnlWAvZJ7-EtUNEEwR1YwNEk4SFVZWDJTS1ZKTE5ERk80WC4u&utm_source=brevo&utm_campaign=Formulario+-+Diagnostico+Atencion+Prioritaria+para+miembros+de+la+comunidad+unisinua&utm_medium=email&route=shorturl"
+target="_blank"
+onclick="track('CAP')">
 Centro de Atención Prioritaria (CAP)
 </a>
 
-<a class="btn" href="https://monteria-inundacion.onrender.com/" target="_blank">
+<a class="btn" href="https://monteria-inundacion.onrender.com/" target="_blank"
+onclick="track('Estadisticas Monteria')">
 Estadísticas Montería
 </a>
 
-<a class="btn" href="https://poseidon.unisinu.edu.co/" target="_blank">
+<a class="btn" href="https://poseidon.unisinu.edu.co/" target="_blank"
+onclick="track('Inundaciones Registradas')">
 Inundaciones Registradas
 </a>
 
-<a class="btn" href="https://forms.gle/RzNw7XtvVHqPYfHu9" target="_blank">
+<a class="btn" href="https://forms.gle/RzNw7XtvVHqPYfHu9" target="_blank"
+onclick="track('Analisis Danio')">
 Análisis de Daño Estructural
 </a>
+
 
 </div>
 
 <div class="footer">
 POSEIDON • Universidad del Sinú • 2026
 </div>
+<script>
+function track(nombre){
+  gtag('event', 'click_boton', {
+    'event_category': 'botones',
+    'event_label': nombre
+  });
+}
+</script>
 
 </body>
 </html>
