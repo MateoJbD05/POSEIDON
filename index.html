@@ -135,8 +135,9 @@ POSEIDON • Universidad del Sinú • 2026
 <script>
 function track(nombre){
   gtag('event', 'click_boton', {
-    'event_category': 'botones',
-    'event_label': nombre
+    event_category: 'botones',
+    event_label: nombre,
+    transport_type: 'beacon'
   });
 }
 </script>
