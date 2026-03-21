@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #d90000, #8b0000);
+  color: white;
+}
+
+/* HEADER */
+.header {
+  background: #b30000;
+  padding: 18px 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* CONTENEDOR */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+/* LOGIN BOX */
+.login-box {
+  background: #ffffff;
+  color: #b30000;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGO */
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* BOTÓN */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #8b0000;
+}
+
+/* ERROR */
+.error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}

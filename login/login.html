@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>POSEIDON - Acceso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="titulo">POSEIDON</div>
+      <div class="subtitulo">Acceso a Inspección Visual Post-Inundación</div>
+    </div>
+
+    <div class="container">
+      <div class="login-box">
+        <img src="../logo_unisinu.png" class="logo" />
+
+        <h2>Iniciar Sesión</h2>
+
+        <input type="text" id="user" placeholder="Usuario" />
+        <input type="password" id="pass" placeholder="Contraseña" />
+
+        <button onclick="login()">Ingresar</button>
+
+        <p id="error" class="error"></p>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
