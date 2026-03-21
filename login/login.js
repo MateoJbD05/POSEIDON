@@ -28,3 +28,13 @@ async function login() {
     error.textContent = "Error cargando usuarios";
   }
 }
+
+function togglePassword() {
+  const pass = document.getElementById("pass");
+
+  if (pass.type === "password") {
+    pass.type = "text";
+  } else {
+    pass.type = "password";
+  }
+}

@@ -21,7 +21,10 @@
         <h2>Iniciar Sesión</h2>
 
         <input type="text" id="user" placeholder="Usuario" />
-        <input type="password" id="pass" placeholder="Contraseña" />
+        <div class="password-container">
+          <input type="password" id="pass" placeholder="Contraseña" />
+          <span onclick="togglePassword()" id="eye" class="eye">👁️</span>
+        </div>
 
         <button onclick="login()">Ingresar</button>
 
